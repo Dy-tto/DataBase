@@ -71,9 +71,9 @@ FROM employees;
 
 ### 산술 처리하기 : 데이터 값끼리 계산
 * 산술 연산자
-  - +
-  - -
-  - *
+  - \+
+  - \-
+  - \*
   - /
 ```mysql
 SELECT employee_id, salary, salary+500, salary-100, (salary*1.1)/2
