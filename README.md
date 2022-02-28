@@ -201,6 +201,7 @@ FROM employees;
 * SUBSTR : 지정한 길이만큼 문자열 추출하기
 일부 문자열을 잘라내 가공해야할 때 사용한다. 특정 부분의 위치와 길이를 지정하여 추출할 수 있다.
 <img width="608" alt="스크린샷 2022-02-28 오후 4 05 33" src="https://user-images.githubusercontent.com/59719632/155939051-aab52dd3-e311-41ae-a535-300a20855068.png">
+
 ```mysql
 SELECT job_id, SUBSTR(job_id, 1, 2) AS 적용결과
 FROM employees;
