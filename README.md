@@ -94,6 +94,7 @@ FROM employees;
   - 숫자
   - 문자
   - etc...
+
 <img width="349" alt="스크린샷 2022-02-28 오후 3 27 01" src="https://user-images.githubusercontent.com/59719632/155934935-13a0d244-8b51-4d2a-bfb9-91d81e4eaf81.png">
 <img width="443" alt="스크린샷 2022-02-28 오후 3 21 20" src="https://user-images.githubusercontent.com/59719632/155934241-dfdf0a56-2aeb-409a-98ca-0d109b1e6e20.png">
 <img width="625" alt="스크린샷 2022-02-28 오후 3 28 43" src="https://user-images.githubusercontent.com/59719632/155935031-8d124157-f24f-4b06-b6f6-13c470016bfa.png">
@@ -199,7 +200,7 @@ FROM employees;
 <img width="503" alt="스크린샷 2022-02-28 오후 4 05 03" src="https://user-images.githubusercontent.com/59719632/155938995-aadde574-abe8-4b93-b554-2d3ec1c1a731.png">
 
 * SUBSTR : 지정한 길이만큼 문자열 추출하기
-일부 문자열을 잘라내 가공해야할 때 사용한다. 특정 부분의 위치와 길이를 지정하여 추출할 수 있다.
+  - 일부 문자열을 잘라내 가공해야할 때 사용한다. 특정 부분의 위치와 길이를 지정하여 추출할 수 있다.
 <img width="608" alt="스크린샷 2022-02-28 오후 4 05 33" src="https://user-images.githubusercontent.com/59719632/155939051-aab52dd3-e311-41ae-a535-300a20855068.png">
 
 ```mysql
@@ -209,7 +210,7 @@ FROM employees;
 <img width="253" alt="스크린샷 2022-02-28 오후 4 06 44" src="https://user-images.githubusercontent.com/59719632/155939215-31011105-4088-445b-946b-5269ccf1e3e8.png">
 
 * REPLACE : 특정 문자를 찾아 바꾸기
-REPLACE는 특정 문자열을 찾아 바꾸는 함수이다. 
+  - REPLACE는 특정 문자열을 찾아 바꾸는 함수이다. 
 <img width="606" alt="스크린샷 2022-02-28 오후 4 08 10" src="https://user-images.githubusercontent.com/59719632/155939366-14452072-eb8c-4761-ab09-e527e3bea13e.png">
 
 ```mysql
@@ -219,8 +220,8 @@ FROM employees;
 <img width="254" alt="스크린샷 2022-02-28 오후 4 09 32" src="https://user-images.githubusercontent.com/59719632/155939553-b474fd5e-971c-459a-b279-04d811178967.png">
 
 * LPAD, RPAD : 특정 문자로 자릿수 채우기
-LPAD는 왼쪽부터 특정 문자로 자릿수를 채우는 함수이고, RPAD는 오른쪽부터 특정 문자로 자릿수를 채우는 함수이다.
-데이터 값의 자릿수를 맞추어야 할 때 유용하다.
+  - LPAD는 왼쪽부터 특정 문자로 자릿수를 채우는 함수이고, RPAD는 오른쪽부터 특정 문자로 자릿수를 채우는 함수이다.
+  - 데이터 값의 자릿수를 맞추어야 할 때 유용하다.
 <img width="554" alt="스크린샷 2022-02-28 오후 4 18 12" src="https://user-images.githubusercontent.com/59719632/155940600-a7b83bb7-360b-44f1-9f17-ca829c105b29.png">
 
 ```mysql
@@ -230,7 +231,7 @@ FROM employees;
 <img width="260" alt="스크린샷 2022-02-28 오후 4 19 23" src="https://user-images.githubusercontent.com/59719632/155940746-d6ad5ca0-465c-41cd-8370-182960a90d62.png">
 
 * LTRIM, RTRIM : 특정 문자 삭제하기
-LTRIM은 왼쪽부터, RTRIM은 오른쪽부터 지정한 문자를 지우는 함수이다.
+  - LTRIM은 왼쪽부터, RTRIM은 오른쪽부터 지정한 문자를 지우는 함수이다.
 <img width="583" alt="스크린샷 2022-02-28 오후 4 20 57" src="https://user-images.githubusercontent.com/59719632/155940938-d6830156-7d43-4417-a8e9-ac0a6cbcf8be.png">
 
 ```mysql
@@ -242,8 +243,8 @@ FROM employees;
 <img width="317" alt="스크린샷 2022-02-28 오후 4 21 06" src="https://user-images.githubusercontent.com/59719632/155941085-68187a97-3f2d-48ba-8ab1-d51cc4132283.png">
 
 * TRIM : 공백 제거하기
-TRIM 함수는 공백을 제거할 때 사용한다. 단, 문자열 중간에 있는 공백은 제거할 수 없다.
-TRIM('문자열' or 열 이름)
+  - TRIM 함수는 공백을 제거할 때 사용한다. 단, 문자열 중간에 있는 공백은 제거할 수 없다.
+  - TRIM('문자열' or 열 이름)
 
 ### 2) 숫자 타입 함수
 * ROUND : 숫자 반올림하기
@@ -259,20 +260,20 @@ TRIM('문자열' or 열 이름)
   - 날짜에 시간을 더하거나 빼려면 시간을 24로 나누어서 더하거나 뺀다.
 
 * MONTHS_BETWEEN : 두 날짜 사이의 개월 수 계산하기
-MONTHS_BETWEEN(날짜, 날짜)
+  - MONTHS_BETWEEN(날짜, 날짜)
 
 * ADD_MONTHS : 월에 날짜 더하기
-ADD_MONTHS(날짜, 숫자)
-결과는 날짜 타입으로 출력된다.
+  - ADD_MONTHS(날짜, 숫자)
+  - 결과는 날짜 타입으로 출력된다.
 
 * NEXT_DAY : 돌아오는 요일의 날짜 계산하기
-NEXT_DAY(날짜, '요일' or '숫자')
+  - NEXT_DAY(날짜, '요일' or '숫자')
 
 * LAST_DAY : 돌아오는 월의 마지막 날짜 계산하기
-LAST_DAY(날짜)
+  - LAST_DAY(날짜)
 
 * ROUND, TRUNC : 날짜를 반올림하거나 버림하기
-ROUND or TRUNC(날짜, 지정 값)
+  - ROUND or TRUNC(날짜, 지정 값)
 
 ```mysql
 SELECT hire_data,
