@@ -221,6 +221,7 @@ FROM employees;
 LPAD는 왼쪽부터 특정 문자로 자릿수를 채우는 함수이고, RPAD는 오른쪽부터 특정 문자로 자릿수를 채우는 함수이다.
 데이터 값의 자릿수를 맞추어야 할 때 유용하다.
 <img width="554" alt="스크린샷 2022-02-28 오후 4 18 12" src="https://user-images.githubusercontent.com/59719632/155940600-a7b83bb7-360b-44f1-9f17-ca829c105b29.png">
+
 ```mysql
 SELECT first_name, LPAD(first_name, 12, '*') AS LPAD적용결과
 FROM employees;
